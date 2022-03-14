@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c908b840a.js" crossorigin="anonymous"></script>
+</head>
+<body onLoad="renderTime();">
+    <div class="container">
+        <div id="box1">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                  <i class="fas fa-bars"></i>
+                </label>
+                <!-- <label class="logo"><i class="fa fa-codepen" aria-hidden="true">&nbsp;&nbsp;</i>uC.</label> -->
+                <ul>
+                  <li><a class="active" href="#box1">Home</a></li>
+                  <li><a href="#box2">About</a></li>
+                  <li><a href="#box3">Experience</a></li>
+                  <li><a href="#box4">Contact</a></li>
+                </ul>
+              </nav>
+              <section></section>
+            <div class="importantinfo">
+                <p id="oneelement">1</p>
+                <p style="text-shadow: 2px 2px black; font-size: 3rem;" class="name">Lica Dragos</p>
+                <p class="frontend">Front-End Developer</p>
+                <p class="welcome">Welcome</p>
+                <div id = "clock" onload="currentTime()"></div>
+            </div> 
+        </div>
+        <div id="box2">
+            <p id="abtu">About Me</p>
+            <p id="infom">Hi, my name is Lica Dragos, I'm from Vaslui, Romania, currently in Iasi, I am a front-end developer in a transitioning state that finished a certified JavaScript Front-End Development course within Scoala Informala de IT.
+             I'm trying to start my web development career in a dynamic IT company with interesting and intelligent people, who can guide and help me to develop, in order to reach an important level as a team member.
+            <br>
+            <br>
+            <br>
+             I'm a result-oriented person, and I'm learning fairly quickly. 
+            Given this, underneath I displayed some of the projects that shows the progress I made during SIT.
+            </p>
+        </div>
+        <div id="box3">
+            <div class="experience">
+                <p class="exp">EXPERIENCE</p>
+            </div>
+            <div class="project1">
+              <a href="https://licadragos.github.io/BMI-Calculator/">
+                <div class="exp2">
+                  <p class="exp21">BMI Calculator</p>
+                </div>
+              </a>
+              
+            </div>
+            <div class="project2">
+              <a href="https://licadragos.github.io/Rock-Paper-Scissors/">
+                <div class="exp2">
+                  <p class="exp21">Rock, Paper & Scissors</p>
+                </div>
+              </a>
+              
+            </div>
+            <div class="project3">
+              <a href="https://licadragos.github.io/Money-Heist-Interactive-Table/">
+                <div class="exp2">
+                  <p class="exp21">Money Heist Interactive Table</p>
+                </div>
+              </a>
+              
+            </div>
+            <div class="project4">
+              <a href="https://licadragos.github.io/ToDo-List/">
+                <div class="exp2">
+                  <p class="exp21">ToDo-List</p>
+                </div>
+              </a>
+              
+            </div>
+            <div class="project5">
+              <a href="https://licadragos.github.io/2-Houses-Painted-With-HTML-Canvas-SVG/">
+                <div class="exp2">
+                  <p class="exp21">2 Houses Painted With Canvas & SVG</p>
+                </div>
+              </a>
+              
+            </div>
+            <div class="project6">
+              <a href="https://licadragos.github.io/XIO-Movies---Website-for-Movies/">
+                <div class="exp2">
+                  <p class="exp21">XIO Movies</p>
+                </div>
+              </a>
+              
+            </div>
+        </div>
+        <div id="box4">
+            <form action="https://formsubmit.co/licadragos04@yahoo.com" method="POST">
+                <h3>GET IN TOUCH</h3>
+
+                <form target="_blank" action="https://formsubmit.co/licadragos04@yahoo.com" method="POST">
+                  <div class="form-group">
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                      </div>
+                      <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                  <p class="announce">If you enjoy the website and the showed projects, feel free to contact me through the above contact form, <a href="https://www.linkedin.com/in/dragos-lica-3aa6b5212/"><span class="spanone">Linked</span><span class="spantwo">In</span></a> or phone number. <i style="color: lime; font-size: 1.3rem;" class="fa-solid fa-check"></i></p>
+                </form>
+                <a href="#box1"><i id="arrowup" class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+                
+        </div>
+        <div id="box5">
+            <div class="section1">
+                <a href="https://github.com/licadragos"><p>Git</p></a>
+                <a href="mailto:licadragos04@yahoo.com""><p>Email</p></a>
+                <a href="#box2"><p>Phone no.: 0775 283 646</p></a>
+                <a href="#box1"><p>Iasi, Romania</p></a>  
+            </div>
+            <div class="section2">
+                <p style="font-size: 3rem;">Connect</p>
+            </div>
+            <div class="section4">
+                <p>
+                    <a href="https://www.youtube.com/"><i style="color: red; font-size: 3rem;" class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/"><i style="color: dodgerblue; font-size: 3rem;" class="fa-brands fa-facebook-messenger"></i> </a>
+                    <a href="https://www.instagram.com/"><i style="color: magenta; font-size: 3rem;" class="fa-brands fa-instagram-square"></i> </a>
+                    <a href="https://www.linkedin.com/in/dragos-lica-3aa6b5212/"><i style="color: mediumslateblue; font-size: 3rem;" class="fa-brands fa-linkedin"></i></p></a>       
+            </div>
+            <div class="section5">
+                <p>Copyright © 2022 - All Rights Reserved</p>
+            </div>
+            <div class="section6">
+                <p>By Lica Dragos</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

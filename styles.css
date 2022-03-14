@@ -1,0 +1,1062 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 750px 750px 750px 750px 0.35fr;
+    grid-template-areas: "box1 box1 box1 box1 box1"
+                        "box2 box2 box2 box2 box2"
+                        "box3 box3 box3 box3 box3"
+                        "box4 box4 box4 box4 box4"
+                        "box5 box5 box5 box5 box5";
+}
+
+#box1 {
+    position: relative;
+    grid-area: box1;
+    background-image: url('img/nature.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white; 
+
+}
+
+#box1 .frontend {
+    font-size: 2rem;
+}
+#box1 .welcome {
+    font-size: 2rem;
+}
+#box1 .time {
+    font-size: 1rem;
+}
+section {
+    text-align: center;
+}
+
+.importantinfo {
+    text-align: center;
+    margin-top: 13%;
+}
+
+.importantinfo button {
+    text-align: center;
+}
+
+#oneelement{
+    visibility:hidden;
+}
+#clock {
+    text-align: center;
+}
+#box2 {
+    display: flex;
+    grid-area: box2;
+    flex-direction: column;
+    background-image: url('img/nature2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+#abtu {
+    margin-top: 90px;
+    color: rgba(200, 255, 0, 0.356);
+    text-shadow: 2px 4px black;
+    font-size: 3rem;
+    padding-left: 15%;
+    text-align: left;
+    
+}
+#infom {
+    margin-top: 30px;
+    color: rgb(204, 204, 204);
+    text-shadow: 2px 2px black;
+    font-size: 1.3rem;
+    padding-left: 15%;
+    text-align: left;
+    padding-right: 50%;
+}
+#box3 {
+    grid-area: box3;
+}
+#box4 {
+    grid-area: box4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box5 {
+    grid-area: box5;
+}
+
+#box1 h1, h2, p {
+    text-align: center;
+}
+
+.one .info {
+    text-align: left;
+}
+
+.one {
+    width: 50%;
+    margin-left: 15%;
+}
+
+.one .aboutme {
+    margin-top: 18%;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: left;
+    font-size: 3.3rem;
+}
+
+
+.one .info {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.two {
+    width: 50%;
+}
+
+/* exp2 */
+.exp2{
+    width: 100%;
+    height: 40%;
+    background-color: #00000088;
+}
+
+#box3 a{
+    text-decoration: none;
+}
+
+
+
+
+/* FORM */
+
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {    
+    border: 0;
+    margin: 10px;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 1rem;
+    width: 90%;
+}
+
+form button {
+    padding: 15px;
+    background-image: linear-gradient(to right, darkblue,dodgerblue);
+    color: #fff;
+    font-size: 1.2rem;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+.announce{
+    margin-top: 1.2rem;
+}
+.spanone{
+    color: black;
+    font-weight: bold;
+}
+.spantwo{
+    color: white;
+    background-color: rgb(0, 0, 158);
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+#box5{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 22%, rgba(9,9,121,1) 74%, rgba(5,90,175,1) 100%, rgba(0,212,255,1) 100%);
+    color: white;
+}
+
+/* box3 */
+#box3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    grid-template-areas: "experience experience experience"
+                        "project1 project2 project3"
+                        "project4 project5 project6";
+    grid-gap: 0.3rem;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.experience {
+    grid-area: experience;
+    text-align: left;
+}
+.project1 {
+    grid-area: project1;
+    background-color: red;
+}
+.project2 {
+    grid-area: project2;
+    background-color: green;
+}
+.project3 {
+    grid-area: project3;
+    background-color: blue;
+}
+.project4 {
+    grid-area: project4;
+    background-color: gold;
+}
+.project5 {
+    grid-area: project5;
+    background-color: magenta;
+}
+.project6 {
+    grid-area: project6;
+    background-color: yellow;
+}
+
+.project1{
+    background-image: url(img/1project.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.project2{
+    background-image: url(img/2project.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.project3{
+    background-image: url(img/3project.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.project4{
+    background-image: url(img/4project.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.project5{
+    background-image: url(img/5project.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.project6{
+    background-image: url(img/9project.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.exp {
+    position: relative;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+/* FOOTER */
+#box5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-areas: "section1 section2"
+                        "section1 section4"
+                        "section5 section6";
+    text-align: center;
+    grid-gap: 0.5rem;
+    color: white;
+}
+
+.section6 {
+    margin-bottom: 20px;
+}
+
+.section1 {
+    grid-area: section1;
+    margin-top: 10px;
+}
+.section2 {
+    grid-area: section2;
+}
+.section4 {
+    grid-area: section4;
+    margin-bottom: 10px;
+}
+.section5 {
+    grid-area: section5;
+}
+.section6 {
+    grid-area: section6;
+}
+
+.section1 p{
+    line-height: 1.7rem;
+    color: gold;
+}
+
+.section1 a{
+    text-decoration: none;
+}
+.section4 a{
+    text-decoration: none;
+}
+
+.announce a{
+    text-decoration: none;
+}
+
+.feature1 {
+    grid-area: feature1;
+}
+.feature2 {
+    grid-area: feature2;
+}
+.feature3 {
+    grid-area: feature3;
+}
+.feature4 {
+    grid-area: feature4;
+}
+
+.box6 p {
+    text-align: left;
+}
+
+.box6 #edu, #tech {
+    font-size: 3rem;
+}
+.box6 p{
+    font-size: 1.5rem;
+}
+
+#arrowup {
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    text-decoration: none;
+    font-size: 5rem;
+    color: darkorchid;
+}
+
+#arrowup:hover{
+    color: lime;
+}
+
+.exp21 {
+    text-shadow: 2px 3px black;
+    color: white;
+    font-size: 2rem;
+}
+
+/* NAVBAR */
+nav{
+    background: #003464;
+    height: 80px;
+    width: 100%;
+}
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 1.3rem;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    .importantinfo{
+        z-index: 1;
+    }
+    nav{
+        z-index: 2;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+    }
+
+  }
+
+/* BOX 3 MEDIA QUERIES */
+@media only screen and (max-width: 550px){
+    #box1 .importantinfo {
+        margin-top: 60%;
+    }
+    #abtu {
+        color: rgba(200, 255, 0, 0.356);
+        text-shadow: 2px 4px black;
+        font-size: 3rem;
+    }
+    #infom {
+        color: rgb(204, 204, 204);
+        text-shadow: 2px 2px black;
+        font-size: 1.3rem;
+        margin-left: none;
+        margin-right: none;
+    }
+    #box2 p{
+        text-align: center;
+        padding: 0;
+    }
+    #box5{
+        grid-template-columns: 1fr;
+        grid-template-rows: 20px 80px 60px 60px 60px 10px;
+        grid-template-areas: 
+        "section1"
+        "section1"
+        "section2"
+        "section4"
+        "section5"
+        "section6"
+        ;
+    }
+    .section6{
+        margin-top: -30px;
+    }
+    #box3{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "experience"
+        "project1"
+        "project2"
+        "project3"
+        "project4"
+        "project5"
+        "project6"
+        ;
+        grid-gap: 0.3rem;
+    }
+    .experience{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .exp21 {
+        text-shadow: 2px 3px black;
+        color: white;
+        font-size: 1.2rem;
+    }
+}
+
+/* TRANSITING MEDIA QUERY */
+@media only screen and (min-width: 550px) and (max-width: 768px){
+    #box1 .importantinfo {
+        margin-top: 50%;
+    }
+    #abtu {
+        color: rgba(200, 255, 0, 0.356);
+        text-shadow: 2px 4px black;
+        font-size: 3rem;
+    }
+    #infom {
+        color: rgb(204, 204, 204);
+        text-shadow: 2px 2px black;
+        font-size: 1.3rem;
+        margin-left: none;
+        margin-right: none;
+    }
+    #box2 p{
+        text-align: center;
+        padding: 0;
+    }
+    #box5{
+        grid-template-columns: 1fr;
+        grid-template-rows: 20px 80px 60px 60px 60px 10px;
+        grid-template-areas: 
+        "section1"
+        "section1"
+        "section2"
+        "section4"
+        "section5"
+        "section6"
+        ;
+    }
+    .section6{
+        margin-top: -30px;
+    }
+    #box3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "experience experience"
+        "project1 project2"
+        "project3 project4"
+        "project5 project6"
+        ;
+        grid-gap: 0.3rem;
+    }
+    .exp21 {
+        text-shadow: 2px 3px black;
+        color: white;
+        font-size: 1.2rem;
+    }
+}
+
+/* transiting */
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    #box1 .importantinfo {
+        margin-top: 43%;
+    }
+    #abtu {
+        color: rgba(200, 255, 0, 0.356);
+        text-shadow: 2px 4px black;
+        font-size: 3rem;
+    }
+    #infom {
+        color: rgb(204, 204, 204);
+        text-shadow: 2px 2px black;
+        font-size: 1.3rem;
+        margin-left: none;
+        margin-right: none;
+    }
+    #box2 p{
+        text-align: center;
+        padding: 0;
+    }
+    #box5{
+        grid-template-columns: 1fr;
+        grid-template-rows: 20px 80px 60px 60px 60px 10px;
+        grid-template-areas: 
+        "section1"
+        "section1"
+        "section2"
+        "section4"
+        "section5"
+        "section6"
+        ;
+    }
+    .section6{
+        margin-top: -30px;
+    }
+    #box3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "experience experience"
+        "project1 project2"
+        "project3 project4"
+        "project5 project6"
+        ;
+        grid-gap: 0.3rem;
+    }
+    .exp21 {
+        text-shadow: 2px 3px black;
+        color: white;
+        font-size: 1.2rem;
+    }
+}
+
+/* transiting */
+@media only screen and (min-width: 650px) and (max-width: 768px){
+    #box1 .importantinfo {
+        margin-top: 40%;
+    }
+    #abtu {
+        color: rgba(200, 255, 0, 0.356);
+        text-shadow: 2px 4px black;
+        font-size: 3rem;
+    }
+    #infom {
+        color: rgb(204, 204, 204);
+        text-shadow: 2px 2px black;
+        font-size: 1.3rem;
+        margin-left: none;
+        margin-right: none;
+    }
+    #box2 p{
+        text-align: center;
+        padding: 0;
+    }
+    #box5{
+        grid-template-columns: 1fr;
+        grid-template-rows: 20px 80px 60px 60px 60px 10px;
+        grid-template-areas: 
+        "section1"
+        "section1"
+        "section2"
+        "section4"
+        "section5"
+        "section6"
+        ;
+    }
+    .section6{
+        margin-top: -30px;
+    }
+    #box3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.35fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "experience experience"
+        "project1 project2"
+        "project3 project4"
+        "project5 project6"
+        ;
+        grid-gap: 0.3rem;
+    }
+    .exp21 {
+        text-shadow: 2px 3px black;
+        color: white;
+        font-size: 1.2rem;
+    }
+}
+
+/* transiting */
+@media only screen and (min-width: 700px) and (max-width: 768px){
+    #box1 .importantinfo {
+        margin-top: 40%;
+    }
+    #abtu {
+        color: rgba(200, 255, 0, 0.356);
+        text-shadow: 2px 4px black;
+        font-size: 3rem;
+    }
+    #infom {
+        color: rgb(204, 204, 204);
+        text-shadow: 2px 2px black;
+        font-size: 1.3rem;
+        margin-left: none;
+        margin-right: none;
+    }
+    #box2 p{
+        text-align: center;
+        padding: 0;
+    }
+    #box5{
+        grid-template-columns: 1fr;
+        grid-template-rows: 20px 80px 60px 60px 60px 10px;
+        grid-template-areas: 
+        "section1"
+        "section1"
+        "section2"
+        "section4"
+        "section5"
+        "section6"
+        ;
+    }
+    .section6{
+        margin-top: -30px;
+    }
+    #box3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.35fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "experience experience"
+        "project1 project2"
+        "project3 project4"
+        "project5 project6"
+        ;
+        grid-gap: 0.3rem;
+    }
+    .exp21 {
+        text-shadow: 2px 3px black;
+        color: white;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* BOX 3 TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    #box1 .importantinfo {
+        margin-top: 35%;
+    }
+    #abtu {
+        color: rgba(200, 255, 0, 0.356);
+        text-shadow: 2px 4px black;
+        font-size: 3rem;
+    }
+    #infom {
+        color: rgb(204, 204, 204);
+        text-shadow: 2px 2px black;
+        font-size: 1.3rem;
+        margin-left: none;
+        margin-right: none;
+    }
+    #box2 p{
+        text-align: center;
+        padding: 0;
+    }
+    #box5{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 70px 50px;
+        grid-template-areas: 
+        "section1 section2"
+        "section1 section4"
+        "section5 section6"
+        ;
+    }
+    .section4{
+        margin-top: 15px;
+    }
+    #box3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.35fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "experience experience"
+        "project1 project2"
+        "project3 project4"
+        "project5 project6"
+        ;
+        grid-gap: 0.3rem;
+    }
+    .exp21 {
+        text-shadow: 2px 3px black;
+        color: white;
+        font-size: 1.2rem;
+    }
+}
+
+/* BOX 3 TABLET */
+@media only screen and (min-width: 830px) and (max-width: 1024px){
+    #box1 .importantinfo {
+        margin-top: 35%;
+    }
+    #abtu {
+        color: rgba(200, 255, 0, 0.356);
+        text-shadow: 2px 4px black;
+        font-size: 3rem;
+    }
+    #infom {
+        color: rgb(204, 204, 204);
+        text-shadow: 2px 2px black;
+        font-size: 1.3rem;
+        margin-left: none;
+        margin-right: none;
+    }
+    #box2 p{
+        text-align: center;
+        padding: 0;
+    }
+    #box5{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 70px 50px;
+        grid-template-areas: 
+        "section1 section2"
+        "section1 section4"
+        "section5 section6"
+        ;
+    }
+    .section4{
+        margin-top: 15px;
+    }
+    #box3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.35fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "experience experience"
+        "project1 project2"
+        "project3 project4"
+        "project5 project6"
+        ;
+        grid-gap: 0.3rem;
+    }
+    .exp21 {
+        text-shadow: 2px 3px black;
+        color: white;
+        font-size: 1.6rem;
+    }
+}
+
+/* BOX 3 TABLET */
+@media only screen and (min-width: 870px) and (max-width: 1024px){
+    #box1 .importantinfo {
+        margin-top: 25%;
+    }
+    #abtu {
+        color: rgba(200, 255, 0, 0.356);
+        text-shadow: 2px 4px black;
+        font-size: 3rem;
+    }
+    #infom {
+        color: rgb(204, 204, 204);
+        text-shadow: 2px 2px black;
+        font-size: 1.3rem;
+        margin-left: none;
+        margin-right: none;
+    }
+    #box2 p{
+        text-align: center;
+        padding: 0;
+    }
+    #box5{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 70px 50px;
+        grid-template-areas: 
+        "section1 section2"
+        "section1 section4"
+        "section5 section6"
+        ;
+    }
+    .section4{
+        margin-top: 15px;
+    }
+    #box3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.35fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "experience experience"
+        "project1 project2"
+        "project3 project4"
+        "project5 project6"
+        ;
+        grid-gap: 0.3rem;
+    }
+    .exp21 {
+        text-shadow: 2px 3px black;
+        color: white;
+        font-size: 1.6rem;
+    }
+}
+
+/* BOX 3 TABLET */
+@media only screen and (min-width: 950px) and (max-width: 1024px){
+    #box1 .importantinfo {
+        margin-top: 20%;
+    }
+    #abtu {
+        color: rgba(200, 255, 0, 0.356);
+        text-shadow: 2px 4px black;
+        font-size: 3rem;
+    }
+    #infom {
+        color: rgb(204, 204, 204);
+        text-shadow: 2px 2px black;
+        font-size: 1.3rem;
+        margin-left: none;
+        margin-right: none;
+    }
+    #box2 p{
+        text-align: center;
+        padding: 0;
+    }
+    #box5{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 70px 50px;
+        grid-template-areas: 
+        "section1 section2"
+        "section1 section4"
+        "section5 section6"
+        ;
+    }
+    .section4{
+        margin-top: 15px;
+    }
+    #box3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.35fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "experience experience"
+        "project1 project2"
+        "project3 project4"
+        "project5 project6"
+        ;
+        grid-gap: 0.3rem;
+    }
+    .exp21 {
+        text-shadow: 2px 3px black;
+        color: white;
+        font-size: 1.7rem;
+    }
+}
+
+/* BOX 3 TABLET */
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+    #box1 .importantinfo {
+        margin-top: 20%;
+    }
+    #abtu {
+        color: rgba(200, 255, 0, 0.356);
+        text-shadow: 2px 4px black;
+        font-size: 3rem;
+    }
+    #infom {
+        color: rgb(204, 204, 204);
+        text-shadow: 2px 2px black;
+        font-size: 1.1rem;
+        margin-left: none;
+        margin-right: none;
+    }
+    #box5{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 70px 50px;
+        grid-template-areas: 
+        "section1 section2"
+        "section1 section4"
+        "section5 section6"
+        ;
+    }
+    .section4{
+        margin-top: 15px;
+    }
+    #box3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.35fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "experience experience"
+        "project1 project2"
+        "project3 project4"
+        "project5 project6"
+        ;
+        grid-gap: 0.3rem;
+    }
+    .exp21 {
+        text-shadow: 2px 3px black;
+        color: white;
+        font-size: 1.6rem;
+    }
+}
+
+/* BOX 3 TABLET */
+@media only screen and (min-width: 1200px) and (max-width: 1300px){
+    #box1 .importantinfo {
+        margin-top: 20%;
+    }
+    #abtu {
+        color: rgba(200, 255, 0, 0.356);
+        text-shadow: 2px 4px black;
+        font-size: 3rem;
+    }
+    #infom {
+        color: rgb(204, 204, 204);
+        text-shadow: 2px 2px black;
+        font-size: 1.1rem;
+        margin-left: none;
+        margin-right: none;
+    }
+    #box5{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 70px 50px;
+        grid-template-areas: 
+        "section1 section2"
+        "section1 section4"
+        "section5 section6"
+        ;
+    }
+    .section4{
+        margin-top: 15px;
+    }
+    #box3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.35fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "experience experience"
+        "project1 project2"
+        "project3 project4"
+        "project5 project6"
+        ;
+        grid-gap: 0.3rem;
+    }
+    .exp21 {
+        text-shadow: 2px 3px black;
+        color: white;
+        font-size: 1.7rem;
+    }
+}
